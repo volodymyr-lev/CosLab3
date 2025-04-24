@@ -49,12 +49,11 @@ namespace Lab2DPF
 
         private void BtnDrawAprox_Click(object sender, RoutedEventArgs e)
         {
-            DataGridComplex.Items.Clear();
             if (!GetData()) return;
             
-            (Complex[] complexVals, double error) = plotter.PlotFourier(N, I1, I2);
+            double error = plotter.PlotFourier(N, I1, I2);
 
-            //LblDelta.Content = $"Delta Fourier: {error}";
+            LblDelta.Content = $"Delta Fourier: {error}";
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)

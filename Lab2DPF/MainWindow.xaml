@@ -7,7 +7,7 @@
         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         xmlns:SkiaSharp="clr-namespace:SkiaSharp;assembly=SkiaSharp"
         mc:Ignorable="d"
-        Title="Lab2" Height="800" Width="1400">
+        Title="Lab3" Height="800" Width="1400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -38,12 +38,7 @@
             <Label x:Name="LblA1" Content="a1: " Margin="10,5,0,0"/>
             <Label x:Name="LblA2" Content="a2: " Margin="10,5,0,0"/>
 
-            <DataGrid Name="DataGridComplex" Margin="10,5,10,0" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserAddRows="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="fi" Width="80" Binding="{Binding Value}"/>
-                    <DataGridTextColumn Header="Значення" Width="*" Binding="{Binding Complex}"/>
-                </DataGrid.Columns>
-            </DataGrid>
+
 
             <!--<Image Height="51" Source="pack://application:,,,/task.png" Stretch="Fill" Width="197" Margin="0, 30,0,0">
                 <UIElement.RenderTransform>
